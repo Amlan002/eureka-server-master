@@ -6,5 +6,5 @@ spring:
     - local
   cloud:
     config: 
-      uri: http://localhost:8001
+      uri: ${CONFIG_SERVER_URL:http://localhost:8001}
       fail-fast: true
